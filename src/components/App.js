@@ -12,10 +12,10 @@ const App = () =>{
         <div>
           <h1 className="heading">Our Menu</h1>
           <div className="button-container">
-             <Button name="All" setMenu={setMenu} />
-             <Button name="Breakfast" setMenu={setMenu} />
-             <Button name="Lunch" setMenu={setMenu} />
-             <Button name="Shakes" setMenu={setMenu} />
+             <Button id="main" name="All" setMenu={setMenu} />
+             <Button id="filter-btn-1" name="Breakfast" setMenu={setMenu} />
+             <Button id="filter-btn-2" name="Lunch" setMenu={setMenu} />
+             <Button id="filter-btn-3" name="Shakes" setMenu={setMenu} />
           </div>
 
           <DisplayMenu menu={menu}/>

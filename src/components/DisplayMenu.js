@@ -5,7 +5,7 @@ import React from "react";
 const DisplayMenu = ({menu}) =>{
      
     return(
-      <div className="displayed-menu">
+      <div className="displayed-menu" data-test-id={`menu-item-`+ menu[0].category}>
     
         {
             menu.map((items)=>(
