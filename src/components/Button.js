@@ -2,7 +2,7 @@ import React from "react";
 import MenuData from "./MenuData";
 
 
-const Button = ({name,setMenu}) =>{
+const Button = ({id,name,setMenu}) =>{
 
     function implementDisplay(category){
         if(category==="all") return setMenu(MenuData);
@@ -11,7 +11,7 @@ const Button = ({name,setMenu}) =>{
     }
 
     return(
-        <button onClick={()=>implementDisplay(name.toLowerCase())}>{name}</button>
+        <button id={id} onClick={()=>implementDisplay(name.toLowerCase())}>{name}</button>
     )
 }
 
