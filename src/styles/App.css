@@ -1,12 +1,43 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
+.heading {
+  color: navy;
+  margin:auto;
+  width:fit-content;
+  
+  border-bottom: 4px solid orange;
+}
     
 
 button{
-    color: #27aedb;
+    color: orange;
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.button-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.displayed-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
 }
